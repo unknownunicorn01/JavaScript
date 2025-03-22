@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+
+    <button onclick="
+      sign = 'add';
+      alert(calculation());
+      ">
+      add
+    </button>
+    <button onclick="
+          
+          sign = 'sub';
+          alert(calculation());
+    ">
+      subtract
+    </button>
+    <button onclick="
+          
+          sign = 'mul';
+          alert(calculation());
+    ">
+      multiply
+    </button>
+    <button onclick="
+          
+          sign = 'div';
+          alert(calculation());
+    ">
+      division
+    </button>
+    <script>
+      let sign= '';
+      function calculation(a=5,b=4){
+        let oper=sign==='add'? a+b:('sub'? a-b:('mul'?a*b:('div'? a/b:'undefined')));
+        return oper;
+      }
+    </script>
+  </body>
+</html>
