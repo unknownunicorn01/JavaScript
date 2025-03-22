@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+
+
+    <script>
+      const amazon = {
+        name: 'basketball',
+        price: 2095,
+        'dilivery-time': 3+'day',
+        fun: function compPrice(product1=2000,product2=1999){
+          let cost=product1<product2 ? `product1: ${product1} \nproduct2: ${product2} `:`product2: ${product2}\nproduct1: ${product1}`;
+          return cost;
+        }
+      }
+      const {name,price,}= amazon;
+      console.log(name);
+      console.log(price+'cent');
+      console.log('Updated price: '+price+500+'cent');
+      console.log(amazon["dilivery-time"]);
+      console.log(amazon.fun());
+    </script>
+  </body>
+  </html>
